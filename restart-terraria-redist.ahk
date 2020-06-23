@@ -132,8 +132,14 @@ ServSend(cmdtxt) {
 ; Start Terraria
 StartTerraria() {
 	Run, steam://rungameid/105600 ; Start Terraria thru Steam
-	Sleep, 30000 ; I timed how long Terraria takes to start but I still have no clue
-				 ; bc it's different EVERY SINGLE FUCKING TIME
+	WinWait, ahk_exe %TerrariaDirectory%\Terraria.exe,, 10
+	if ErrorLevel {
+		MsgBox, "Tf happened to Terraria?"
+		return
+	} else {
+		Sleep, 30000 ; I timed how long Terraria takes to start but I still have no clue
+					 ; bc it's different EVERY SINGLE FUCKING TIME
+	}
 }
 
 

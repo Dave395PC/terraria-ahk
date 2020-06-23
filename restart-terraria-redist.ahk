@@ -135,7 +135,7 @@ StartTerraria() {
 	WinWait, ahk_exe %TerrariaDirectory%\Terraria.exe,, 10
 	if ErrorLevel {
 		MsgBox, "Tf happened to Terraria?"
-		return
+		Exit
 	} else {
 		Sleep, 30000 ; I timed how long Terraria takes to start but I still have no clue
 					 ; bc it's different EVERY SINGLE FUCKING TIME

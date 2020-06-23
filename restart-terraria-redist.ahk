@@ -59,7 +59,6 @@ return
 
 ; Capture curr pos of cur & append to Desktop\Stuff.txt
 !^+c:: ; c for Copy or Capture
-	global StuffDirectory
 	MouseGetPos, xpos, ypos
 	FormatTime, clickTime,, yyyy/MM/dd HH:mm:ss
 	FileAppend, %clickTime% X`,Y %xpos%`, %ypos%`n, %StuffDirectory%\Stuff.txt
@@ -112,19 +111,6 @@ TerrariaExist() {
 	}
 	else {
 		MsgBox wtf
-	}
-}
-
-
-; Send the server a command
-ServSend(cmdtxt) {
-	WinGet, beforeid, ID, A
-	SetTitleMatchMode, 1
-	if WinExist("Terraria Server: ") {
-		WinActivate
-		Send, %cmdtxt%{Enter}
-		
-		WinActivate, ahk_id %beforeid%
 	}
 }
 

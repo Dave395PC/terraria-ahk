@@ -7,9 +7,6 @@ CoordMode, Mouse, Client
 TerrariaDirectory := "C:\Program Files (x86)\Steam\steamapps\common\Terraria"
 ;                      ↑↑ Folder of your Terraria install ↑↑
 
-StuffDirectory :=    "C:\Users\David\Desktop"
-;                      ↑↑ Folder that you want Stuff.txt in ↑↑
-
 
 
 ;;--------------------------------------------------------------
@@ -18,9 +15,10 @@ StuffDirectory :=    "C:\Users\David\Desktop"
 ;; My display is 3440x1440, and chances are yours isn't
 ;; Use Alt+Ctrl+Shift+C (short for cursor) to append
 ;;  the current coordinates of your cursor
-;;  to all the functions at the end of this program
+;;  to Cursor-Coords.txt
+;;  That file has documentation
 ;; Every number, number are X, Y coordinates for the cursor
-;; They all have comments
+;; They are all documented
 
 ;;--------------------------------------------------------------
 
@@ -62,7 +60,7 @@ return
 	global StuffDirectory
 	MouseGetPos, xpos, ypos
 	FormatTime, clickTime,, yyyy/MM/dd HH:mm:ss
-	FileAppend, %clickTime% X`,Y %xpos%`, %ypos%`n, %StuffDirectory%\Stuff.txt
+	FileAppend, `n%clickTime% X`,Y %xpos%`, %ypos%, Cursor-Coords.txt
 return
 
 

@@ -1,0 +1,45 @@
+### Timestamps help with figuring out which coords are which,
+### if you haven't titled it
+
+### Here are the coordinates you will need to have:
+
+## Terraria Main Menu:
+# Multiplayer
+# Join via IP
+# Player at top of list
+# Most recent server
+## In-Game:
+# Chest for duplicating
+# Settings (Bottom-right)
+# Save and Exit
+# Dupe slot in inventory
+# Dupe slot in chest
+
+
+### Example:
+
+
+## Terraria Main Menu
+
+# Multiplayer
+2020/06/20 18:03:39 X,Y 1718, 543
+# Join via IP
+2020/06/20 18:03:52 X,Y 1732, 444
+# Player at top of list
+2020/06/20 18:04:03 X,Y 1250, 495
+# Most recent server
+2020/06/20 18:04:17 X,Y 1723, 471
+
+
+## In-Game
+
+# Chest
+2020/06/19 22:09:07 X,Y 1647, 738
+# Settings
+2020/06/19 22:17:27 X,Y 3292, 1405
+# Save and Exit
+2020/06/19 22:17:34 X,Y 1497, 958
+# Dupe Spot in Inv
+2020/06/20 20:51:18 X,Y 551, 178
+# Chest Dupe spot
+2020/06/20 20:52:14 X,Y 119, 359
